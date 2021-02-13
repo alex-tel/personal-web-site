@@ -1585,7 +1585,10 @@ input.styler {
 	flex-wrap: wrap;
 }
 
-
+.directions__action {
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -2006,12 +2009,7 @@ input.styler {
 	.directions__image img {
 		margin-left: auto;
 		margin-right: auto;
-	}
-
-	.directions__action {
-	    display: flex;
-	    align-items: center;
-	}
+	}	
 
 	.contacts__wrap {
 		flex-direction: column;
