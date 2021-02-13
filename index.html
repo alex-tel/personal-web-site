@@ -204,77 +204,77 @@
 						<h2>Калькулятор</h2>
 						<p class="label">Специализация персонала</p>
 						<div class="direction">
-							<div class="direction__item active">
+							<div class="direction__item active js-specialization" data-x="1">
 								Грузчик
 							</div>
-							<div class="direction__item">
+							<div class="direction__item js-specialization" data-x="1.06">
 								Комплектовщик
 							</div>
-							<div class="direction__item">
+							<div class="direction__item js-specialization" data-x="1.06">
 								Кладовщик
 							</div>
-							<div class="direction__item">
+							<div class="direction__item js-specialization" data-x="0.97">
 								Упаковщик
 							</div>							
-							<div class="direction__item">
+							<div class="direction__item js-specialization" data-x="0.97">
 								Фасовщик
 							</div>
-							<div class="direction__item">
+							<div class="direction__item js-specialization" data-x="0.97">
 								Рабочий конвейера
 							</div>
-							<div class="direction__item">
+							<div class="direction__item js-specialization" data-x="0.97">
 								Рабочий на производство
 							</div>
-							<div class="direction__item">
+							<div class="direction__item js-specialization" data-x="1">
 								Разнорабочий
 							</div>
 							<div class="show-wrap">
 								<a href="#" class="show-all">Показать все специализации</a>
 							</div>
 							<div class="other-dir d-none">
-								<div class="direction__item">
+								<div class="direction__item js-specialization" data-x="1">
 									Подсобный рабочий
 								</div>
-								<div class="direction__item">
+								<div class="direction__item js-specialization" data-x="1.20">
 									Горничная
 								</div>
-								<div class="direction__item">
+								<div class="direction__item js-specialization" data-x="0.97">
 									Уборщик
 								</div>
-								<div class="direction__item">
+								<div class="direction__item js-specialization" data-x="1.06">
 									Офисный сотрудник
 								</div>
 							</div>
 						</div>
 						<div class="selects">
-							<select data-placeholder="Количество часов в смену" class="styler" name="number" id="calc-num-1" title="Количество часов в смену">
+							<select data-placeholder="Количество часов в смену" class="styler js-hours-per-shift" name="number" id="calc-num-1" title="Количество часов в смену">
 								<option value="0" label="0"></option>
-								<option value="3">3 часов</option>
-								<option value="4">4 часов</option>				
-								<option value="5">5 часов</option>
-								<option value="6">6 часов</option>
-								<option value="7">7 часов</option>
-								<option value="8">8 часов</option>
-								<option value="9">9 часов</option>
-								<option value="10">10 часов</option>
-								<option value="11">11 часов</option>
-								<option value="12">12 часов</option>
+								<option value="1.65">3 часов</option>
+								<option value="1.65">4 часов</option>
+								<option value="1.35">5 часов</option>
+								<option value="1.35">6 часов</option>
+								<option value="1.10">7 часов</option>
+								<option value="1.10">8 часов</option>
+								<option value="1.03">9 часов</option>
+								<option value="1.03">10 часов</option>
+								<option value="1">11 часов</option>
+								<option value="1">12 часов</option>
 							</select>
-							<select data-placeholder="Количество рабочих дней в неделю" class="styler" name="number" id="calc-num-2" title="Количество рабочих дней в неделю">
+							<select data-placeholder="Количество рабочих дней в неделю" class="styler js-days-per-week" name="number" id="calc-num-2" title="Количество рабочих дней в неделю">
 								<option value="0" label="0"></option>
-								<option value="1">1 день</option>	
-								<option value="2">2 день</option>
-								<option value="3">3 день</option>
-								<option value="4">4 день</option>
-								<option value="5">5 день</option>
-								<option value="6">6 день</option>
-								<option value="7">7 день</option>
+								<option value="1.18">1 день</option>
+								<option value="1.18">2 день</option>
+								<option value="1.06">3 день</option>
+								<option value="1.06">4 день</option>
+								<option value="1">5 день</option>
+								<option value="1">6 день</option>
+								<option value="1">7 день</option>
 							</select>
-							<select data-placeholder="Ваш округ" class="styler" name="number" id="calc-num-3" title="Ваш округ">
-								<option value="0" label="0"></option>				
+							<select data-placeholder="Ваш округ" class="styler js-work-region" name="number" id="calc-num-3" title="Ваш округ">
+								<option value="0" label="0"></option>
 								<option value="1">Краснодарский край</option>
-								<option value="2">Ростовская область</option>
-								<option value="3">Иные субъекты</option>
+								<option value="1">Ростовская область</option>
+								<option value="1.03">Иные субъекты</option>
 							</select>
 						</div>	
 						<div class="sliders">
@@ -282,14 +282,14 @@
 								<p class="sliders__label">Количество персонала в смену</p>
 								<div class="sliders__wrap">
 									<div class="input-slider" id="slider-1"></div>
-									<div class="num" id="result-slider-1"></div>
+									<div class="num js-persons-in-shift-value" id="result-slider-1"></div>
 								</div>
 							</div>
 							<div class="sliders__item">
 								<p class="sliders__label">Отсрочка оплаты (дней)</p>
 								<div class="sliders__wrap">
 									<div class="input-slider" id="slider-3"></div>
-									<div class="num" id="result-slider-3"></div>
+									<div class="num js-payment-postponement-value" id="result-slider-3"></div>
 								</div>
 							</div>
 						</div>
@@ -298,15 +298,15 @@
 								<p class="sliders__label">Выберите пол</p>
 								<div class="radio__wrapper">
 									<div class="radio__wrap">
-										<input type="radio" name="gender" class="styler" id="gender-1">
+										<input type="radio" name="gender" value="1" class="styler js-gender" id="gender-1">
 										<label for="gender-1">Мужской</label>
 									</div>
 									<div class="radio__wrap">
-										<input type="radio" name="gender" class="styler" id="gender-2" checked>
+										<input type="radio" name="gender" value="0.95" class="styler js-gender" id="gender-2" checked>
 										<label for="gender-2">Женский</label>
 									</div>
 									<div class="radio__wrap">
-										<input type="radio" name="gender" class="styler" id="gender-3">
+										<input type="radio" name="gender" value="0.97" class="styler js-gender" id="gender-3">
 										<label for="gender-3">Не имеет значения</label>
 									</div>
 								</div>								
@@ -315,15 +315,15 @@
 								<p class="sliders__label">Выберите возраст</p>
 								<div class="radio__wrapper">
 									<div class="radio__wrap">
-										<input type="radio" name="age" class="styler" id="age-1">
+										<input type="radio" name="age" value="1.05" class="styler js-age" id="age-1">
 										<label for="age-1">До 30</label>
 									</div>
 									<div class="radio__wrap">
-										<input type="radio" name="age" class="styler" id="age-2" checked>
+										<input type="radio" name="age" value="1" class="styler js-age" id="age-2" checked>
 										<label for="age-2">До 45</label>
 									</div>
 									<div class="radio__wrap">
-										<input type="radio" name="age" class="styler" id="age-3">
+										<input type="radio" name="age" value="0.97" class="styler js-age" id="age-3">
 										<label for="age-3">До 65</label>
 									</div>
 								</div>								
@@ -332,15 +332,15 @@
 								<p class="sliders__label">Жильё предоставляет</p>
 								<div class="radio__wrapper">
 									<div class="radio__wrap">
-										<input type="radio" name="transit" class="styler" id="transit-1">
+										<input type="radio" name="transit" value="0.97" class="styler js-housing" id="transit-1">
 										<label for="transit-1">Заказчик</label>
 									</div>
 									<div class="radio__wrap">
-										<input type="radio" name="transit" class="styler" id="transit-2" checked>
+										<input type="radio" name="transit" value="1.03" class="styler js-housing" id="transit-2" checked>
 										<label for="transit-2">Исполнитель</label>
 									</div>
 									<div class="radio__wrap">
-										<input type="radio" name="transit" class="styler" id="transit-3">
+										<input type="radio" name="transit" value="1" class="styler js-housing" id="transit-3">
 										<label for="transit-3">Не требуется</label>
 									</div>
 								</div>								
@@ -349,11 +349,11 @@
 								<p class="sliders__label">Медицинская книжка</p>
 								<div class="radio__wrapper">
 									<div class="radio__wrap">
-										<input type="radio" name="med" class="styler" id="med-1">
+										<input type="radio" name="med" value="1.03" class="styler js-health-card" id="med-1">
 										<label for="med-1">Да</label>
 									</div>
 									<div class="radio__wrap">
-										<input type="radio" name="med" class="styler" id="med-2" checked>
+										<input type="radio" name="med" value="1" class="styler js-health-card" id="med-2" checked>
 										<label for="med-2">Нет</label>
 									</div>
 								</div>								
@@ -362,11 +362,11 @@
 								<p class="sliders__label">Варианты оплаты</p>
 								<div class="radio__wrapper">
 									<div class="radio__wrap">
-										<input type="radio" name="clothes" class="styler" id="pay-1">
+										<input type="radio" name="clothes" value="0.94" class="styler js-payment-type" id="pay-1">
 										<label for="pay-1">Наличный расчёт</label>
 									</div>
 									<div class="radio__wrap">
-										<input type="radio" name="clothes" class="styler" id="pay-2" checked>
+										<input type="radio" name="clothes" value="1" class="styler js-payment-type" id="pay-2" checked>
 										<label for="pay-2">Безналичный рассчёт</label>
 									</div>									
 								</div>								
@@ -376,7 +376,7 @@
 					<div class="calc__results">
 						<div class="calc__coast">
 							<p>Результаты</p>
-							<p>240.35 руб./час</p>
+							<p><span class="js-calculated-rate">240.35</span> руб./час</p>
 						</div>
 						<div class="calc__consult">
 							<p>Окончательную стоимость уточняйте <br>у менеджера</p>
